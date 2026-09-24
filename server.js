@@ -1,4 +1,5 @@
 const express = require("express");
+const path = require("path");
 require("dotenv").config();
 
 const connectDB = require("./db/connection.js");
@@ -13,7 +14,15 @@ connectDB();
 // Middleware
 app.use(express.json());
 
-// Routes
+// Serve files from public folder
+app.use(express.static(path.join(__dirname, "public")));
+
+// Home page
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "public", "index.html"));
+});
+
+// API routes
 app.use("/api/books", bookRoutes);
 
 // Start server

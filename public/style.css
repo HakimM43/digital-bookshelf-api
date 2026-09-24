@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.hero {
+    text-align: center;
+    padding: 70px 30px;
+}
+
+.eyebrow {
+    color: #38bdf8;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.description {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+    color: #94a3b8;
+    font-size: 1.1rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 24px;
+    background: #38bdf8;
+    color: #0f172a;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    background: #7dd3fc;
+}
+
+.api-section {
+    margin-top: 30px;
+}
+
+.api-section h2 {
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.endpoint-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+    font-family: monospace;
+}
+
+.card p {
+    color: #94a3b8;
+}
+
+.method {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.get {
+    background: #22c55e;
+    color: #052e16;
+}
+
+.post {
+    background: #3b82f6;
+    color: white;
+}
+
+.put {
+    background: #f59e0b;
+    color: #451a03;
+}
+
+.delete {
+    background: #ef4444;
+    color: white;
+}
+
+footer {
+    margin-top: 60px;
+    padding-top: 25px;
+    border-top: 1px solid #334155;
+    text-align: center;
+    color: #64748b;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero {
+        padding: 40px 10px;
+    }
+}

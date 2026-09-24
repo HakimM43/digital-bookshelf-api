@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Bookshelf API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <section class="hero">
+            <p class="eyebrow">MongoDB + Express + Mongoose</p>
+            <h1>Digital Bookshelf API</h1>
+
+            <p class="description">
+                A RESTful API for managing a digital collection of books.
+                Create, view, update, and delete book records using the API endpoints below.
+            </p>
+
+            <a class="button" href="/api/books">View Books API</a>
+        </section>
+
+        <section class="api-section">
+            <h2>API Endpoints</h2>
+
+            <div class="endpoint-grid">
+
+                <div class="card">
+                    <span class="method post">POST</span>
+                    <h3>/api/books</h3>
+                    <p>Create a new book.</p>
+                </div>
+
+                <div class="card">
+                    <span class="method get">GET</span>
+                    <h3>/api/books</h3>
+                    <p>Retrieve all books.</p>
+                </div>
+
+                <div class="card">
+                    <span class="method get">GET</span>
+                    <h3>/api/books/:id</h3>
+                    <p>Retrieve one book by ID.</p>
+                </div>
+
+                <div class="card">
+                    <span class="method put">PUT</span>
+                    <h3>/api/books/:id</h3>
+                    <p>Update an existing book.</p>
+                </div>
+
+                <div class="card">
+                    <span class="method delete">DELETE</span>
+                    <h3>/api/books/:id</h3>
+                    <p>Delete a book from the collection.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <p>Built with Node.js, Express, MongoDB, and Mongoose.</p>
+        </footer>
+    </main>
+
+</body>
+</html>
